@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>File Metadata Service</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="root">
+    <div class="title">File Metadata Service</div>
+    <div class="abstract">
+      <p>A microservice to return a description of the metadata of an uploaded file.</p>
+      <p>
+        To use, upload a file in the form below. The response will be a JSON object containing some metadata from the file.
+      </p>
+      <form ref="uploadForm"
+        id="uploadForm"
+        action="./upload"
+        method="post"
+        encType="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Upload!" />
+      </form>
+    </div>
+    <div class="example-container">
+      <div class="title">example</div>
+      <div class="example-codebox">
+        <span class="comment">// upload image</span><br />
+        <span class="string">ukintelligencepuzzle.png</span><br /><br />
+        <span class="comment">// response</span><br />
+        {
+          <div class="code-indent">
+            <span class="bold">name: </span>
+            <span class="string">
+              ukintelligencepuzzle.png</span><span class="bold">,</span><br />
+            <span class="bold">filesize: </span>
+            <span class="number">
+              63485</span><span class="bold">,</span><br />
+            <span class="bold">mime-type: </span>
+            <span class="string">
+              image/png
+            </span>
+          </div>
+        }
+      </div>
+    </div>
+    <div class="attribution">
+    Created by Andrew Marshall with <a href="https://nodejs.org/">Node.js</a> and <a href="http://expressjs.com/">Express.js</a>. <a href="https://www.github.com/marshallaf/file-metadata">See it on Github!</a></div>
+  </div>
+</body>
+</html>
