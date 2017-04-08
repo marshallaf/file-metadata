@@ -1,0 +1,15 @@
+{
+  "name": "file-metadata",
+  "version": "1.0.0",
+  "description": "A utility to give metadata about an uploaded file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Andrew Marshall",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.15.2",
+    "express-fileupload": "^0.1.2"
+  }
+}
