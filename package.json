@@ -4,7 +4,7 @@
   "description": "A utility to give metadata about an uploaded file.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "nodemon index.js"
   },
   "author": "Andrew Marshall",
   "license": "ISC",
